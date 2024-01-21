@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Legal Solutions</title>
+
     <!-- Google fonts -->
     <!-- -------EB Geramond---- -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/da9af4df5f.js" crossorigin="anonymous"></script>
 
     <!-- Tailwind & Daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -26,6 +30,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'p-color': '#B68C5A',
                     }
                 }
             }
@@ -41,15 +46,141 @@
         .font-poppins {
             font-family: 'Poppins', sans-serif;
         }
+
+        header ul li {
+            font-family: 'Poppins', sans-serif;
+        }
     </style>
 
 </head>
 
 <body>
-    <header class="container mx-auto">
-        <h1>Hello Prithibi</h1>
+    <!-- Header Section -->
+    <header class="container px-4 lg:px- mx-auto">
+        <!-- Navigation bar -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Cases</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                        <path d="M19.7224 14.1357L30.0959 3.84753L40.7683 14.5199L30.4375 24.808L19.7224 14.1357Z"
+                            fill="#B68C5A" />
+                        <path
+                            d="M18.8687 12.4708C18.2283 13.1111 17.2038 13.1111 16.6061 12.4708L16.5208 12.3854C15.9231 11.7878 15.9658 10.934 16.4354 10.2509C18.954 6.28084 23.223 2.09729 26.4247 0.304336C27.1504 -0.0798678 27.9615 -0.165247 28.5591 0.432403L28.6872 0.560471C29.2849 1.15812 29.2849 2.18266 28.6872 2.78031L18.8687 12.4708Z"
+                            fill="#B68C5A" />
+                        <path
+                            d="M32.0597 25.7045C31.4193 26.3448 31.4193 27.3267 32.0597 27.967L32.145 28.0524C32.7427 28.65 33.5965 28.6073 34.2795 28.1804C38.2923 25.6618 42.5185 21.4355 44.3115 18.2338C44.6957 17.5081 44.7811 16.697 44.1834 16.0994L44.0553 15.9713C43.4577 15.3737 42.4332 15.331 41.7928 15.9713L32.0597 25.7045Z"
+                            fill="#B68C5A" />
+                        <path
+                            d="M1.23799 43.1644C1.02454 43.079 0.939164 42.8229 0.768407 42.6948C0.256135 42.0118 0 41.158 0 40.3042C0.0426893 39.237 0.469582 38.2551 1.28068 37.5294L22.1557 19.173L23.7779 20.7525L25.3574 22.3747L6.87297 43.1217C6.14726 43.8901 5.1654 44.3597 4.09817 44.4024C3.24439 44.4024 2.3906 44.1462 1.70757 43.634C1.53681 43.4632 1.32337 43.3778 1.23799 43.1644Z"
+                            fill="#B68C5A" />
+                        <path
+                            d="M19.2102 36.761L18.0149 38.127V39.5358H16.905L15.4109 41.0299V45H43.8846V41.0299L42.3478 39.5358H41.2379V38.127L40.0426 36.761H19.2102Z"
+                            fill="#B68C5A" />
+                    </svg>
+                    <p class="font-ebg text-3xl font-bold">&nbsp;Justice</p>
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home<i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a>Services<i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a>Cases<i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a>Blog<i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a>Contact Us<i class="fa-solid fa-angle-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-p-color text-white">Free Consultation</a>
+            </div>
+        </div>
+        <!-- banner section  -->
+        <!-- bg-gradient-to-b from-[#111] to-[#111111] -->
+        <section class="bg-[url('/images/banner.png')] bg-no-repeat bg-cover mt-5 ">
+            <div class="w-3/5 text-center mx-auto space-y-5 py-36">
+                <h1 class="font-ebg text-6xl text-white">We Provide Effective <br>Legal Solutions</h1>
+                <p class="font-poppins text-white">There are many variations of passages of Lorem Ipsum available, but
+                    the majority have suffered
+                    alteration in some form, by injected humour.</p>
+                <div class="flex gap-3 items-center justify-center
+                ">
+                    <input type="text" placeholder="Search your services" class="p-3 outline-none rounded-md w-1/2">
+                    <button class="btn px-8 border-0 bg-p-color text-white">Search</button>
+                </div>
+
+            </div>
+        </section>
     </header>
     <main class="container mx-auto">
+        <!-- Legal practice area section -->
+        <section class="my-8 w-9/10 mx-auto space-y-10">
+            <!-- legal practice intro -->
+            <div class="w-3/5 text-center mx-auto space-y-3">
+                <h1 class="font-ebg text-2xl font-bold">The Legal Practice Area</h1>
+                <p class="font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+            <!-- legal practice- card container -->
+            <div class=" mx-auto grid grid-cols-1 lg:grid-cols-3">
+                <!-- card-1 -->
+                <div class="text-center space-y-5 px-16 md: px-20 lg: px-24 py-8">
+                    <img src="images/business.png" alt="" class="mx-auto">
+                    <h1 class="font-ebg text-xl font-bold">Business Law</h1>
+                    <p class="font-poppins text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <img src="images/arrow.svg" alt="" class="mx-auto">
+                </div>
+                <!-- card-2 -->
+                <div class="text-center space-y-5 px-16 md: px-20 lg: px-24 py-8 bg-gradient-to-b from-[#F3F3F3] to-[#f3f3f3]">
+                    <img src="images/criminal.png" alt="" class="mx-auto">
+                    <h1 class="font-ebg text-xl font-bold">Business Law</h1>
+                    <p class="font-poppins text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <img src="images/arrow.svg" alt="" class="mx-auto">
+                </div>
+                <!-- card-3 -->
+                <div class="text-center space-y-5 px-16 md: px-20 lg: px-24 py-8">
+                    <img src="images/child.png" alt="" class="mx-auto">
+                    <h1 class="font-ebg text-xl font-bold">Business Law</h1>
+                    <p class="font-poppins text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <img src="images/arrow.svg" alt="" class="mx-auto">
+                </div>
+                <!-- card-4 -->
+                <div class="text-center space-y-5 px-16 md: px-20 lg: px-24 py-8">
+                    <img src="images/education.png" alt="" class="mx-auto">
+                    <h1 class="font-ebg text-xl font-bold">Business Law</h1>
+                    <p class="font-poppins text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <img src="images/arrow.svg" alt="" class="mx-auto">
+                </div>
+                <!-- card-5 -->
+                <div class="text-center space-y-5 px-16 md: px-20 lg: px-24 py-8">
+                    <img src="images/divorce.png" alt="" class="mx-auto">
+                    <h1 class="font-ebg text-xl font-bold">Business Law</h1>
+                    <p class="font-poppins text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <img src="images/arrow.svg" alt="" class="mx-auto">
+                </div>
+                <!-- card-6 -->
+                <div class="text-center space-y-5 px-16 md: px-20 lg: px-24 py-8">
+                    <img src="images/tax.png" alt="" class="mx-auto">
+                    <h1 class="font-ebg text-xl font-bold">Business Law</h1>
+                    <p class="font-poppins text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <img src="images/arrow.svg" alt="" class="mx-auto">
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer>
